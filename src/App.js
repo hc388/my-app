@@ -1,26 +1,47 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import Navigator from './Navigator'
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './newStyles.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+
+
+const App = () => {
+
+    /*const minusOperator = () => {
+        console.log("I GOT IN HERE!!!")
+        var num = +document.getElementById("num").innerHTML;
+        num--;
+        document.getElementById("num").innerHTML = num;
+    };
+    const plusOperator = () => {
+        var num = +document.getElementById("num").innerHTML;
+        num++;
+        document.getElementById("num").innerHTML = num;
+    };*/
+    return (
+        <div className="App">
+
+            {/*<button onClick={minusOperator}>-</button>
+            <h2 id={"num"}>0</h2>
+            <button onClick={plusOperator}>+</button>*/}
+            {Navigator}
+            <header className="jumbotron" style={{paddingBottom: "0 px"}}>
+                <div className="container" style={{paddingTop: "0 px"}}>
+                    <div className="row row-header">
+                        <div className="col-12 col-sm-6">
+                            <h1>Weather Today</h1>
+                            {/* eslint-disable-next-line react/no-unescaped-entities */}
+                            <p>This segment of the website displays location's weather using a web API from
+                                openweathermap!</p>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+        </div>
+
+
+    );
 }
 
 export default App;
