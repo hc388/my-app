@@ -5,7 +5,7 @@ const Navigator = () => {
         <div>
             <nav className="navbar navbar-light navbar-expand-sm fixed-top" style={{paddingBottom: "0px;"}}>
                 <div className="container logocontainer">
-                    <a href="./redoIndex.html"><img src="gifnewlogo.gif" height="40px" width="160px" id="logoimg"
+                    <a href="./redoIndex.html"><img src={require("./gifnewlogo.gif")} height="40px" width="160px" id="logoimg"
                                                     style={{paddingRight: "20px"}} alt="logo new gif"/></a>
                     <button className="navbar-toggler " type="button" data-toggle="collapse" data-target="#Navbar">
                         <span id="toggler" className="navbar-toggler-icon newbutton"></span>
