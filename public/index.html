@@ -4,6 +4,7 @@
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <link rel="stylesheet" href="./font-awesome.min.css">
+    <link rel="stylesheet" href="src/App.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./bootstrap-social.css">
     <link rel="stylesheet" href="./newStyles.css">
@@ -33,6 +34,10 @@
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+<!--
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCYZkaeVMNqESomLAQEnR2CH3l9JBHOalE&libraries=places"></script>
+-->
+
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -45,4 +50,13 @@
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
   </body>
+ <script>
+    function activatePlacesSearch(){
+      var input = document.getElementById('CityName');
+      var autocomplete = new google.maps.places.Autocomplete(input);
+
+    }
+  </script>
+
+  <script src="./bootstrap.min.css"></script>
 </html>
